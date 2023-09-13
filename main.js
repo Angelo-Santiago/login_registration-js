@@ -6,7 +6,7 @@ document.getElementById('login').addEventListener('submit', function(event){
     const username = document.getElementById('loginUsername').value;
     const password = document.getElementById('loginPassword').value
 
-    // Check if username and password are valid
+    // Verificar se o usuário e a senha são válidos
     if (username === banco_de_dados[0] && password === banco_de_dados[1]) {
     // Successful login
     alert('Login Bem sucedido');
@@ -23,22 +23,22 @@ document.getElementById('register').addEventListener('submit', function(event) {
     const password = document.getElementById('registerPassword').value;
     const confirmPassword = document.getElementById('registerConfirmPassword').value;
 
-  // Check if all fields are filled
+  // Verificar se os campos foram preencidos corretamente
     if (username && email && password && confirmPassword) {
-    // Check if passwords match
+    // Verificar se a senha é igual a sua confirmação
         if (password === confirmPassword) {
-      // Successful registration
+      // Cadastro feito com sucesso
         alert('Registrado com sucesso !');
         banco_de_dados.unshift(username)
         banco_de_dados.push(password)
-      // Reset the form
+      // Resetar o formulário
         document.getElementById('register').reset();
         } else {
-      // Passwords don't match
+      // Senhas não batem
         alert('As senhas não são iguais');
     }
     } else{
-    // Missing fields
+    // Campos não preencidos
     alert('Por favor preencha todos os campos');
 }
 });
