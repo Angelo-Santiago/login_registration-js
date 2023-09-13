@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(192, 171, 146);
+}
+
+.form-container{
+    display: flex;
+    border-radius: 20px;
+    background-color: aqua;
+    width: 45rem;
+    height: 20rem;
+    margin: auto;
+    margin-top: 7rem;
+}
+.form-container h2{
+    text-align: center;
+    color: rgb(129, 104, 23);
+}
+
+.form-container label , input{
+    font-size: 18px; 
+    border-radius: 4px;
+}
+
+.form-container button{
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.form-container button:hover{
+    background-color: rgb(158, 151, 140);
+    transition: 0.4s;
+}
+
+#register{
+    margin-left: 9rem;
+    margin-top: -14px;
+}
+#register label , input{
+    font-size: 21px; 
+    border-radius: 4px;
+}
+
+
+footer{
+    background-color: blanchedalmond;
+    
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    margin-top: 11rem;
+    
+}
